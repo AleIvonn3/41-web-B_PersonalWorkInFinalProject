@@ -1,6 +1,12 @@
+import { useState } from "react";
+import ButtonForm from "./ButtonForm";
 import FormPersonalData from "./FormPersonalData";
+import FormHousingData from "./FormHousingData";
+import FormContract from "./FormContract";
 
 function FormTemplate() {
+  const [activeForm, setActiveForm] = useState("personal");
+
   return (
     <div className="flex flex-col items-center py-10 sm:py-16 text-center px-4 bg-[#faf8f3]">
       {/* HEADER */}
@@ -24,18 +30,21 @@ function FormTemplate() {
 
       {/* BARRA DE PROGRESO */}
       <div className="flex justify-center items-center gap-2 mt-6 max-w-3xl w-full border-2 border-solid border-black rounded-lg">
-        <button className="flex-1 bg-white focus:bg-[#a8c3a0] text-[#4b4b4b] rounded-lg py-1 sm:px-8 sm:mr-2 leading-tight m-1">
-          Datos Personales
-        </button>
-        <button className="flex-1 bg-white focus:bg-[#a8c3a0] text-[#4b4b4b] rounded-lg py-1 sm:px-8 sm:mx-2 leading-tight m-1">
-          Datos de Vivienda
-        </button>
-        <button className="flex-1 bg-white focus:bg-[#a8c3a0] text-[#4b4b4b] rounded-lg py-1 sm:px-8 sm:ml-2 leading-tight m-1">
+        <ButtonForm type="selectForm" onClick={() => setActiveForm("personal")}>
+          Datos personales
+        </ButtonForm>
+        <ButtonForm type="selectForm" onClick={() => setActiveForm("housing")}>
+          Datos de vivienda
+        </ButtonForm>
+        <ButtonForm type="selectForm" onClick={() => setActiveForm("contract")}>
           Contrato
-        </button>
+        </ButtonForm>
       </div>
 
-      <FormPersonalData />
+      {/* FORMULARIO */}
+      {activeForm === "personal" && <FormPersonalData />}
+      {activeForm === "housing" && <FormHousingData />}
+      {activeForm === "contract" && <FormContract />}
     </div>
   );
 }
