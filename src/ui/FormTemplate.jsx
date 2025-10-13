@@ -64,21 +64,21 @@ function FormTemplate() {
       {/* BARRA DE PROGRESO */}
       <div className="flex justify-center items-center gap-2 mt-6 max-w-3xl w-full border-2 border-solid border-black rounded-lg">
         <ButtonForm
-          type="selectForm"
+          style="selectForm"
           onClick={() => handleFormChange("personal")}
           active={activeForm === "personal"}
         >
           Datos personales
         </ButtonForm>
         <ButtonForm
-          type="selectForm"
+          style="selectForm"
           onClick={() => handleFormChange("housing")}
           active={activeForm === "housing"}
         >
           Datos de vivienda
         </ButtonForm>
         <ButtonForm
-          type="selectForm"
+          style="selectForm"
           onClick={() => handleFormChange("contract")}
           active={activeForm === "contract"}
         >

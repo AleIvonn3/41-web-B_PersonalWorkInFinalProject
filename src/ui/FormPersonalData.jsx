@@ -1,3 +1,4 @@
+import ButtonForm from "./ButtonForm";
 import Input from "./Input";
 
 function FormPersonalData() {
@@ -69,43 +70,23 @@ function FormPersonalData() {
 
         {/* INE */}
         <div>
-          {/* <label className="block mb-1 font-poppins text-[#4b4b4b] font-medium">
-            INE (Agrega tu foto en PDF) *
-          </label>
-          <div className=" items-center gap-2 grid grid-cols-1 sm:grid-cols-2">
-            <input
-              type="file"
-              accept=".pdf"
-              className="flex-1 border border-gray-300 rounded-md p-2 focus:ring focus:ring-green-200 outline-none"
-            /> */}
           <Input
             requiredInfo="INE (Agrega tu foto en PDF) *"
             type="file"
             accept=".pdf"
           >
-            <button
-              type="button"
-              className="bg-[#A8C3A0] text-#faf8f3 px-4 py-2 font-extrabold hover:bg-[#A8C3A0] transition rounded-full mt-2"
-            >
-              Agregar
-            </button>
+            <ButtonForm style="actionGreen">Agregar</ButtonForm>
           </Input>
-          {/* </div> */}
         </div>
       </div>
 
-      {/* Botón siguiente */}
+      {/* SUBMIT FORMULARIO */}
       <div className="flex flex-row items-center mt-8 space-y-4 justify-center w-full">
-        <button
-          type="submit"
-          className="bg-[#D88C66] text-[#FAF8F3] font-semibold px-6 py-2 rounded-full hover:bg-[#F2D6C1] transition"
-        >
+        <ButtonForm style="actionOrange" type="submit">
           Siguiente
-        </button>
-
-        {/* Icono decorativo de huellita */}
+        </ButtonForm>
         <img
-          src="../../public/paw.png" // Coloca aquí la ruta de tu ilustración
+          src="../../public/paw.png"
           alt="Paw"
           className="w-20 sm:w-44 sm:h-44 object-contain m-4  sm:m-6 rotate-45"
         />
