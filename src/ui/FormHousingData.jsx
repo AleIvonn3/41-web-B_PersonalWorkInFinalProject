@@ -31,9 +31,14 @@ function FormHousingData() {
             </label>
             <select className="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-[#A8C3A0] outline-none"
               name="patioTerraza">
-              <option></option>
+              <option value="" disabled selected></option>
+              <option value="1">Patio</option>
+              <option value="2">Terraza</option>
+              <option value="3">Ambos</option>
+              <option value="4">Ninguno</option>
             </select>          
         </div>
+           
 
       </div>
     </form>
