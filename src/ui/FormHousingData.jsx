@@ -102,6 +102,17 @@ function FormHousingData() {
             </select>          
         </div>
 
+{/* 7 */}
+    <div className="space-y-1">
+        <label className="block font-medium mb-1 font-poppins text-[#4b4b4b] ">
+            ¿Actualmente tienes otras mascotas?(En caso afirmativo, indica especie, raza y edad)
+            </label>
+            <textarea className="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-[#A8C3A0] outline-none"
+              name="mascotas" rows="3" placeholder="Escribe aquí..."></textarea>          
+    </div>
+    
+            
+
 
       </div>    
       </div>
