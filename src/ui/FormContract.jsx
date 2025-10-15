@@ -1,7 +1,7 @@
 function FormContract() {
   return (
       <form>
-        FORMULARIO DATOS DE VIVIENDA
+        CONTRATO
         <Firma />
       </form>
     );
