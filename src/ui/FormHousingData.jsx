@@ -8,7 +8,7 @@ function FormHousingData() {
       <h2 className="text-lg font-semibold text-center mb-4 text-[#4b4b4b]">
         FORMULARIO DATOS DE VIVIENDA
       </h2>
-      
+{/* 1 */}
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
       <div className="space-y-1">
         <label className="block font-medium mb-1 font-poppins text-[#4b4b4b] ">
@@ -23,15 +23,18 @@ function FormHousingData() {
                 <option value="4">Departamento rentado</option>
               </select>
       </div>
-          
+
+{/* 2 */}
+      <div className="space-y-1">
         <label className="block font-medium mb-1 font-poppins text-[#4b4b4b] ">
-            <span className="text-sm text-gray-600">¿Tienes patio o terraza?</span>
+            ¿Tienes patio o terraza?
+            </label>
             <select className="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-[#A8C3A0] outline-none"
               name="patioTerraza">
               <option></option>
-            </select>
-          </label>
-        
+            </select>          
+        </div>
+
       </div>
     </form>
   );
