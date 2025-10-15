@@ -4,7 +4,6 @@ function FormHousingData() {
   return (
     <form>
       FORMULARIO DATOS DE VIVIENDA
-      <Firma />
     </form>
   );
 }
