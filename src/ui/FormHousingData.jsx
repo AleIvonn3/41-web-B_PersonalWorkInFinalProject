@@ -117,7 +117,16 @@ function FormHousingData() {
             ¿Donde permanecera la mascota la mayor parte del tiempo?
             </label>
             <textarea className="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-[#A8C3A0] outline-none"
-              name="mascotas" rows="3" placeholder="Escribe aquí..."></textarea>          
+              name="mascotiempo" rows="3" placeholder="Escribe aquí..."></textarea>          
+    </div>
+
+{/* 9 */}
+    <div className="space-y-1">
+        <label className="block font-medium mb-1 font-poppins text-[#4b4b4b] ">
+            ¿Cuentas con transporte propio o acceso facil para llevar a tu mascota al veterinario en caso de emergencia? (Especifica)
+            </label>
+            <textarea className="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-[#A8C3A0] outline-none"
+              name="acceso" rows="3" placeholder="Escribe aquí..."></textarea>          
     </div>
             
 
