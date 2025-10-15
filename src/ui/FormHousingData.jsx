@@ -38,6 +38,22 @@ function FormHousingData() {
               <option value="4">Ninguno</option>
             </select>          
         </div>
+
+{/* 3 */}
+
+    <div className="space-y-1">
+        <label className="block font-medium mb-1 font-poppins text-[#4b4b4b] ">
+            Tipo de Zona
+            </label>
+            <select className="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-[#A8C3A0] outline-none"
+              name="patioTerraza">
+              <option value="" disabled selected></option>
+              <option value="1">Urbana</option>
+              <option value="2">Suburbana</option>
+              <option value="3">Rural</option>
+            </select>          
+        </div>
+
            
 
       </div>
