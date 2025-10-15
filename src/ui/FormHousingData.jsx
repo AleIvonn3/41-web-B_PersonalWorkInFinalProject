@@ -40,7 +40,6 @@ function FormHousingData() {
         </div>
 
 {/* 3 */}
-
     <div className="space-y-1">
         <label className="block font-medium mb-1 font-poppins text-[#4b4b4b] ">
             Tipo de Zona
@@ -55,7 +54,6 @@ function FormHousingData() {
         </div>
 
 {/* 4 */}
-
     <div className="space-y-1">
         <label className="block font-medium mb-1 font-poppins text-[#4b4b4b] ">
             ¿Hay niños en casa?
@@ -90,9 +88,22 @@ function FormHousingData() {
                 <option value="9">9</option>
                 <option value="10">10 o más</option>
               </select>
-      </div>
-        
 
+{/* 6 */}
+    <div className="space-y-1">
+        <label className="block font-medium mb-1 font-poppins text-[#4b4b4b] ">
+            Tu vivienda es compartida con
+            </label>
+            <select className="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-[#A8C3A0] outline-none"
+              name="compartida">
+              <option value="" disabled selected></option>
+              <option value="1">Familiares</option>
+              <option value="2">Roomies</option>
+            </select>          
+        </div>
+
+
+      </div>    
       </div>
     </form>
   );
