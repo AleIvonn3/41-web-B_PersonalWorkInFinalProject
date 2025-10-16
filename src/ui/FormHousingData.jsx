@@ -131,6 +131,21 @@ function FormHousingData() {
             <textarea className="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-[#A8C3A0] outline-none"
               name="acceso" rows="3" placeholder="Escribe aquí..."></textarea>          
     </div>
+
+{/* 10 */}
+    <div className="space-y-7">
+        <label className="block font-medium mb-1 font-poppins text-[#4b4b4b] ">
+            ¿Con que frecuencia estara sola la mascota al dia?
+            </label>
+            <select className="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-[#A8C3A0] outline-none"
+              name="frecuencia">
+              <option value="" disabled selected></option>
+              <option value="1">1 vez a la semana</option>
+              <option value="2">2-3 veces a la semana</option>
+              <option value="3">4-5 veces a la semana</option>
+              <option value="4">Todos los días</option>
+            </select>          
+        </div>
             
 
       </div>    
