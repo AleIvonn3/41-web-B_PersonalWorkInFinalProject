@@ -1,5 +1,7 @@
+import { useNavigate } from "react-router-dom";
 
 function FormHousingData() {
+  const navigate = useNavigate();
   return (
     <form
       className="bg-white border-2 border-[#A8C3A0]  rounded-xl  mt-8 p-6 max-w-2xl w-full text-left"
@@ -174,7 +176,9 @@ function FormHousingData() {
       </div> 
       
       <div class="flex flex-row items-center mt-8 space-y-4 justify-center w-full">
-        <button class="px-4 py-2 font-semibold hover:ring-offset-2 hover:ring-2  transition rounded-full mt-2 bg-[#D88C66] hover:ring-[#D88C66] text-[#FAF8F3]">Siguiente</button>      </div>
+        <button class="px-4 py-2 font-semibold hover:ring-offset-2 hover:ring-2  transition rounded-full mt-2 bg-[#D88C66] hover:ring-[#D88C66] text-[#FAF8F3]"
+        onClick={() => navigate("/FormContract")}
+        >Siguiente</button>      </div>
       </div >
       
     </form>
