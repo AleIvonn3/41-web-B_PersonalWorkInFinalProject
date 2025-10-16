@@ -133,7 +133,7 @@ function FormHousingData() {
     </div>
 
 {/* 10 */}
-    <div className="space-y-7">
+    <div className="space-y-1">
         <label className="block font-medium mb-1 font-poppins text-[#4b4b4b] ">
             ¿Con que frecuencia estara sola la mascota al dia?
             </label>
@@ -144,6 +144,19 @@ function FormHousingData() {
               <option value="2">2-3 veces a la semana</option>
               <option value="3">4-5 veces a la semana</option>
               <option value="4">Todos los días</option>
+            </select>          
+        </div>
+
+{/* 11 */}
+    <div className="space-y-1">
+        <label className="block font-medium mb-1 font-poppins text-[#4b4b4b] ">
+            ¿La mascota tendra acceso a todos los espacios del hogar o solo a ciertas areas??
+            </label>
+            <select className="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-[#A8C3A0] outline-none"
+              name="frecuencia">
+              <option value="" disabled selected></option>
+              <option value="1">Acceso a todos los espacios</option>
+              <option value="2">Acceso a ciertas áreas</option>
             </select>          
         </div>
             
