@@ -3,7 +3,7 @@ import ButtonForm from "./ButtonForm";
 function FormHousingData() {
   return (
     <form
-      className="bg-white border-2 border-[#A8C3A0]  rounded-xl  mt-8 p-6 max-w-md w-full text-left"
+      className="bg-white border-2 border-[#A8C3A0]  rounded-xl  mt-8 p-6 max-w-2xl w-full text-left"
     >
       <h2 className="text-lg font-semibold text-center mb-4 text-[#4b4b4b]">
         FORMULARIO DATOS DE VIVIENDA
@@ -65,11 +65,11 @@ function FormHousingData() {
               <option value="2">No</option>
             </select>          
         </div>
-    </div>
+    
 
 
 {/* 5 */}
-    <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 mt-4">
+    
       <div className="space-y-1">
         <label className="block font-medium mb-1 font-poppins text-[#4b4b4b] ">
               Numero de personas que viven contigo
@@ -88,9 +88,10 @@ function FormHousingData() {
                 <option value="9">9</option>
                 <option value="10">10 o más</option>
               </select>
+              </div>
 
 {/* 6 */}
-    <div className="space-y-1">
+    <div className="space-y-7">
         <label className="block font-medium mb-1 font-poppins text-[#4b4b4b] ">
             Tu vivienda es compartida con
             </label>
@@ -101,8 +102,10 @@ function FormHousingData() {
               <option value="2">Roomies</option>
             </select>          
         </div>
-
+        </div>
+<div>
 {/* 7 */}
+  <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 mt-4">
     <div className="space-y-1">
         <label className="block font-medium mb-1 font-poppins text-[#4b4b4b] ">
             ¿Actualmente tienes otras mascotas?(En caso afirmativo, indica especie, raza y edad)
@@ -129,7 +132,6 @@ function FormHousingData() {
               name="acceso" rows="3" placeholder="Escribe aquí..."></textarea>          
     </div>
             
-
 
       </div>    
       </div>
