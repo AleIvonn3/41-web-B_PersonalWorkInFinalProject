@@ -1,4 +1,3 @@
-import ButtonForm from "./ButtonForm";
 
 function FormHousingData() {
   return (
@@ -159,11 +158,25 @@ function FormHousingData() {
               <option value="2">Acceso a ciertas áreas</option>
             </select>          
         </div>
-            
 
-      </div>    
+{/* 12 */}
+  <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 mt-4">
+    <div>
+      <label class="block text-base mb-1 font-poppins text-[#4b4b4b] font-medium">
+        Adjunta una foto del area donde vivira la mascota</label>
+        <input accept="" class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-[#A8C3A0] outline-none appearance-none" type="file" name="croquis"></input>
+    </div>
       </div>
+
+      </div> 
+      
+      <div class="flex flex-row items-center mt-8 space-y-4 justify-center w-full">
+        <button class="px-4 py-2 font-semibold hover:ring-offset-2 hover:ring-2  transition rounded-full mt-2 bg-[#D88C66] hover:ring-[#D88C66] text-[#FAF8F3]">Siguiente</button>      </div>
+
+      </div >
+      
     </form>
+    
   );
 }
 

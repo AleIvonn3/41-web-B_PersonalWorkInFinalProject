@@ -28,7 +28,7 @@ function FormPersonalData() {
   };
 
   // Validaciones básicas
-  const validate = () => {
+  const validate = () => { 
     const newErrors = {};
 
     // Nombre: solo letras y espacios
